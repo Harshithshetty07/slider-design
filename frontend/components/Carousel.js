@@ -11,19 +11,19 @@ const Carousel = () => {
       category: 'Category 1',
       title: 'Example 1',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas, ipsum exercitationem mollitia saepe neque aut corporis officiis excepturi architecto?',
-      image: '/images/spindle.png'
+      image: '/images/spindle2.png'
     },
     {
       category: 'Category 2',
       title: 'Example 2',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas, ipsum exercitationem mollitia saepe neque aut corporis officiis excepturi architecto?',
-      image: '/images/spindle1.png'
+      image: '/images/spindle.png'
     },
     {
       category: 'Category 3',
       title: 'Example 3',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas, ipsum exercitationem mollitia saepe neque aut corporis officiis excepturi architecto?',
-      image: '/images/spindle.png'
+      image: '/images/spindle2.png'
     }
   ];
 

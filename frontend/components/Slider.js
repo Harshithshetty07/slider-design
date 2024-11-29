@@ -8,11 +8,11 @@ export default function Home() {
   const listRef = useRef(null);
   const circleRef = useRef(null);
   const images = [
-    '/images/1.png',
-    '/images/2.png',
-    '/images/3.png',
-    '/images/4.png',
-    '/images/5.png',
+    '/images/6.png.jpeg',
+    '/images/7.jpg',
+    '/images/8.png',
+    '/images/6.png.jpeg',
+    '/images/7.jpg',
   ];
 
   useEffect(() => {
@@ -84,7 +84,7 @@ export default function Home() {
               <img 
                 src={src} 
                 alt={`Slide ${index + 1}`} 
-                className="w-[90%] filter drop-shadow-[0_0_20px_#000]" 
+                className="slide w-[65%] filter drop-shadow-[0_0_20px_#000]" 
               />
             </div>
           ))}
@@ -103,12 +103,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="absolute bottom-[5%] left-1/2 -translate-x-1/2 text-center text-[#eee] w-max">
-          <div className="text-left uppercase translate-y-[20px]">Menu</div>
-          <div 
-            className="text-[5rem] uppercase tracking-[10px] font-bold relative"
-          >
-            Restaurant
-          </div>
+          
           <button 
             className="border border-[#eee5] bg-transparent text-[#eee] 
             font-poppins tracking-[5px] px-5 py-2.5 rounded-[20px]"
@@ -121,9 +116,9 @@ export default function Home() {
         <button 
           id="prev" 
           onClick={handlePrev}
-          className={`absolute top-1/2 -translate-y-1/2 w-[50px] h-[50px] 
-            rounded-full bg-[#eee5] border border-[#eee8] 
-            text-[#eee] text-xl font-mono cursor-pointer z-[15] left-5 
+          className={`absolute top-1/2 -translate-y-1/2 w-[70px] h-[70px] 
+            rounded-full bg-black border border-[#eee8] 
+            text-white text-xl font-mono cursor-pointer z-[15] left-5 
             ${active === 0 ? 'hidden' : ''}`}
         >
           &lt;
@@ -131,9 +126,9 @@ export default function Home() {
         <button 
           id="next" 
           onClick={handleNext}
-          className={`absolute top-1/2 -translate-y-1/2 w-[50px] h-[50px] 
-            rounded-full bg-[#eee5] border border-[#eee8] 
-            text-[#eee] text-xl font-mono cursor-pointer z-[15] right-5 
+          className={`absolute top-1/2 -translate-y-1/2 w-[70px] h-[70px] 
+            rounded-full bg-black border border-[#eee8] 
+            text-white text-xl font-mono cursor-pointer z-[15] right-5 
             ${active === images.length - 1 ? 'hidden' : ''}`}
         >
           &gt;
